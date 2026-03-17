@@ -1,41 +1,65 @@
-# Software Standards
+---
+layout: default
+title: "Hardware"
+nav_order: 3
+parent: "Home"
+description: "HCL Domino Standards"
+has_children: true
+---
+
+<h1>Software Standards</h1>
+
+<details close markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+
 
 ## Operating System
 
 ## OS Specific Settings
 
 ## Antivirus on Operating System Level
-Antivirus software for the operating system level is mandatory.
-The virus pattern files should be updated at least once a day. 
+Running an antivirus software on  operating system level is highly recommended.
+The virus pattern files should be updated at least once a day.
 If a local pattern update infrastructure (for a central management of the antivirus software) is available the server should be connected to it to make sure to have the current settings and virus pattern files available. 
+
 Please follow the local upgrade policy to make sure that you have the most current version of the antivirus software installed.
 The following configuration changes for the antivirus software have to be made:
 Disable OnAccess Scanner 
 This has to be disabled because of performance reasons
 Exclude the following file extensions from scanning
-*.NSF
-*.NTF
-*.NS5
-*.NT5
-*.TXN
-*.box
-*.NLO
-Exclude the following directories from scanning 
-*\NOTES*\ 
-*\view-rebuild\
-*\Logfiles\
-*\DAOS\
+- *.NSF
+- *.NTF
+- *.NCF
+- *.NS5
+- *.NT5
+- *.TXN
+- *.BOX
+- *.NLO
+
+Exclude the following directories from scanning
+- *\NOTES*\ 
+- *\view-rebuild\
+- *\Logfiles\
+- *\DAOS\
+
 Files and directories which are excluded in the operating system scanning will be checked by the antivirus software on Domino level
 
-## Antivirus on Domino Level
-Domino Installtion Directories
-When installing a domino server, change the default installation folders to the following:
+## Antivirus on Domino 
+Domino Installation Directories
+When installing a Domino server, change the default installation folders to the following:
 For AIX / Linux
-Domino Program Files: /opt/HCL/Domino/Notes/lotus
-Domino Data Directory: /local/notesdata
+- Domino Program Files: /opt/HCL/Domino/
+- Domino Data Directory: /local/notesdata
+
 For Windows Operating Systems
-Domino Program Files: 
-Domino Data Directory: 
+- Domino Program Files:
+- Domino Data Directory:
 
 ### Drive Indexing
 By default Windows operating systems are configured to run a built in drive indexing service. In order to improve the overall system performance for Domino it’s highly recommended to turn off the built in drive indexing. 

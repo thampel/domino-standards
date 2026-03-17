@@ -86,7 +86,7 @@ back_to_top_text: "Back to top"
 
 next_page: true
 
-footer_content: "Copyright &copy; 2026 Thomas. Distributed as <a href=\"https://github.com/thampel/domino-standards/license\">Apache 2.0 license.</a>"
+footer_content: "Copyright &copy; 2026 Thomas Hampel. Distributed as <a href=\"https://github.com/thampel/domino-standards/license\">Apache 2.0 license.</a>"
 
 # Footer last edited timestamp
 # last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter

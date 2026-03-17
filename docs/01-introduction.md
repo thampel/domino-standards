@@ -1,7 +1,8 @@
 ---
 layout: default
-title: "Home"
+title: "Introduction"
 nav_order: 1
+parent: "Home"
 description: "HCL Domino Standards"
 has_children: true
 ---
@@ -16,7 +17,6 @@ has_children: true
 1. TOC
 {:toc}
 </details>
-
 
 ## Purpose
 The purpose of this document is to describe the recommended settings for an HCL Domino environment.

@@ -28,14 +28,12 @@ This section describes the standard features that are allowed to be used within 
 | Automatic Server Recovery | Automated server restart in case of server crash | X |
 | Agent manager | Server task to control scheduled agents | X |
 | AdminP | Administration Process | X |
-| Calendar Connector | Calendar Connector,
-to be used on mail servers and servers hosting a rooms and resource database as well as all HUB servers. |  |
+| Calendar Connector | Calendar Connector, to be used on mail servers and servers hosting a rooms and resource database as well as all HUB servers. |  |
 | Catalog Task | Scheduled task that lists all databases in the database catalog catalog.nsf | X |
 | Compact | compacts databases in order to remove whitespace | X |
 | Statrep | Statistics reporter |  |
 | Events | Events | X |
-| Fixup | Analyzes and fixes problems within the database structure
-to be used when needed. |  |
+| Fixup | Analyzes and fixes problems within the database structure to be used when needed. |  |
 | Design | Refresh database design | X |
 | Directory Cataloger | Initially aggregates information from source Domino Directories into a directory catalog |  |
 | HTTP Server | Server task required to access domino databases from a web browser. Not allowed on all server types, please check chapter 7 for details |  |
@@ -46,11 +44,10 @@ to be used when needed. |  |
 | Schedule manager | To be used on mail servers and application servers hosting a rooms and resource databases or mail files. |  |
 | Fault Analyzer | Fault Analyzer is a server add-in task that processes all new crashes as they are delivered to the Automatic Data Collection mail-in database. |  |
 | Cluster Replicator | Required to keep clusters in sync <br> Mandatory for clustered servers. |  |
-| DDM | Domino Domain Monitoring <br> Not mandatory, but highly recommended to be used.
-For implementation please refer to EPCOS implementation manuals or IBM Lotus Redbooks. |  |
+| DDM | Domino Domain Monitoring <br> Not mandatory, but highly recommended to be used. |  |
 | Stats | Statistics reporter | X |
 | Event Monitor | Events |  |
-| Smart Upgrade | Software distribution system which allows to upgrade existing Notes clients a higher release. Clients need to use Notes version 6.x or higher in order to use this feature. |  |
+| Smart Upgrade | Software distribution system which allows to upgrade existing Notes clients a higher release. |  |
 | SMTP Mail Routing | Convert Notes messages to SMTP mails for routing mails to internet. |  |
 | SMTP Listener | Listen for incoming SMTP mails.
 to be used for dedicated SMTP Servers only |  |

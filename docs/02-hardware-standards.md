@@ -23,11 +23,16 @@ The following standards describe some basic parameters for Domino servers. The p
 
 ## Server Classes
 
-Small
-Medium
-Large
+Small - sufficient for test environments
+Medium - sufficient for hundrets of (registered) users
+Large - sufficient for thousands of (registered) users
 
 ## Server Parameters
-CPU
-Memory
-Disk I/O
+
+### CPU
+
+While it is possible to run Domino on different CPU Architectures, this document focusses on the x86/64 CPU architecture.
+
+### Memory
+
+### Disk I/O

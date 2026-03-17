@@ -21,6 +21,13 @@ has_children: true
 
 ## Domain Names
 
+The name of a Domino Domain should meet the following criteria:
+
+- Must be a unique name, consider using the Company or business name or an abbreviation of it. 
+- All uppercase characters
+
+
+
 ## Cluster Names
 When Domino servers are clustered a cluster name is to be defined. A cluster name must be unique across the organization and across all servers that a user is accessing.
 Syntax:
@@ -38,19 +45,20 @@ List of specific system databases can be found in appendix **XXXXXX**
 
 | **Path** | **Description** |
 | --- | --- |
-| HELP\
-W32\
-GTRHOME\
-MTSTORE\
-RMEVAL\ | Domino Core System Directories |
+| HELP\ | Help files provided as part of the product installation |
+| W32\ | |
+| GTRHOME\ | |
+| MTSTORE\ | Message Tracking Data Store|
+| RMEVAL\ | Domino Core System Directories |
 | SYSTEM\ | This system directory to be used for customer specific system databases |
 
 ### Directory for mail databases
 All mail files have to be stored in the directory 
-	MAIL\
 
-## File Names
-File names shall be unique within the enterprise environment, that’s why all applications created will need to follow this standard for file names
+-	MAIL\
+
+## File Names for Applications 
+File names shall be unique within the enterprise environment, that’s why all applications created will need to follow this standard for file names.
 All these application file names must be registered within the Database Catalog to avoid naming conflicts.
 
 Syntax: 
@@ -222,7 +230,7 @@ Syntax:
 | [AccessLevel] | This part will denote the various access levels user groups will have on the database. You should make a separate group for each access level your database requires. Thus you can have "Editors", "Readers", "Authors", "Depositors" and “NoAccess” <br> Note:  <br> Manager access will be provided to administrators only <br> Designer access is not set by default, because design updates are to be done outside of the production environment <br> Developers will get Designer access rights as highest level. Users will have Editor access as highest level. |
 | [Role] | Optional. If you need different roles within one access level, you should make distinct groups, e.g. _Accounting or _Sales. These suffixes are used to the right of the access level. |
 
-**Example: **
+**Example:**
 - $DB_000034_Authors_Projleader
 - $DB_000034_Authors_2
 - $DB_000034_Authors_XYZ
@@ -258,12 +266,13 @@ System Groups are created and updated by the Domino Administrators.
 
 #### System Groups Naming standard Global Domain
 The Global Lotus Domino Domain uses a different syntax than country domains.
-Syntax: 
+
+**Syntax:**
 * “%” + Group Name**
-*
-Examples:
-%Administrators
-%ServerAccess
+
+Examples:**
+- %Administrators
+- %ServerAccess
 
 This new standard will be used when creating new system groups. Former system groups LocalDomainServers, LocalDomainAdministrators and OtherDomainServers etc. will have to be supported in the new domain by adding the appropriate group above as members of the $ groups.
 
@@ -276,16 +285,16 @@ Administrators are allowed to manually create special groups that can only be us
 | **Group Type** | Mail only |
 | **Storage** | In primary Domino Directory “names.nsf” |
 | **Prefix** | “#” = hash |
+
 Syntax: 
- [Prefix] [CC] - Group Name
+- [Prefix] [CC] - Group Name
 
-Examples
+**Examples**
+- #SE-AllSalesManagers
+- #US-ApplicationDevelopers
 
-#SE-AllSalesManagers
+**Remark:**
 
-#US-ApplicationDevelopers
-
-Remark:
 Make sure only to use the characters described in chapter 5.7.1
 
 #### Administration of User Generated Mail Only Groups

@@ -18,11 +18,9 @@ has_children: true
 {:toc}
 </details>
 
-# Basic Standards
-
 This section describes the core standards for an HCL Domino environment.
 
-## Domoin Certificates
+## Domino Certificates
 
 This section describes standards for Domino Certificates and how they are to be used.
 

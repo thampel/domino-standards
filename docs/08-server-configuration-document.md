@@ -21,9 +21,9 @@ has_children: true
 For each server a standalone configuration document should to be created in the Domino Directory.
 Wildcard configuration documents or configuration for a whole group of servers are not recommended to prevent changes on more than one server by accident.
 
-## Basics
+# Basics
 
-### Basics
+## Basics
 
 | **Field** | **Description / Value** |
 | --- | --- |
@@ -40,7 +40,7 @@ Wildcard configuration documents or configuration for a whole group of servers a
 | Configuration for Domino Server with Shindig | Disabled |
 | Comments: | {empty} |
 
-### Tivoli Enterprise Console Settings
+## Tivoli Enterprise Console Settings
 
 | **Field** | **Description / Value** |
 | --- | --- |
@@ -48,9 +48,9 @@ Wildcard configuration documents or configuration for a whole group of servers a
 | IP Address: | {empty} |
 | Port Number: | 5529 |
 
-## Security
+# Security
 
-### Multi Factor Authentication
+## Multi Factor Authentication
 
 | **Field** | **Description / Value** |
 | --- | --- |
@@ -61,7 +61,7 @@ Wildcard configuration documents or configuration for a whole group of servers a
 | Algorithm | HMAC-SHA256 |
 | Issuer | {DOMAINNAME} |
 
-### Internet Password Verification
+## Internet Password Verification
 
 | **Field** | **Description / Value** |
 | --- | --- |
@@ -79,15 +79,15 @@ Wildcard configuration documents or configuration for a whole group of servers a
 | Default Lockout Expiration | 365 days |
 | Default Maximum Tries Interval | 7 days |
 
-### Server ID Protection on Windows Servers (12.0 and later)
+## Server ID Protection on Windows Servers (12.0 and later)
 
 | **Field** | **Description / Value** |
 | --- | --- |
 | Server ID protection |  |
 
-## Client Upgrade
+# Client Upgrade
 
-### AUT
+## AUT
 
 | **Field** | **Description / Value** |
 | --- | --- |
@@ -95,27 +95,27 @@ Wildcard configuration documents or configuration for a whole group of servers a
 | AUT service DNS name | {empty} |
 | Maximum number of download sessions | 30 |
 
-### Trust Certificates 
+## Trust Certificates 
 List of trusted certificates if AUT feature is enabled.
 
-### Smart Upgrade
+## Smart Upgrade
 
 | **Field** | **Description / Value** |
 | --- | --- |
 | Smart Upgrade Database link: | {empty} |
 | Limit Concurrent Smart Upgrade: | Disabled |
 
-### Provisioning
+## Provisioning
 
 | **Field** | **Description / Value** |
 | --- | --- |
 | Provisioning settings are enabled | Disabled |
 
-## Router/SMTP
+# Router/SMTP
 
-### Basics
+## Basics
 
-#### Router/SMTP Basics
+### Router/SMTP Basics
 
 | **Field** | **Description / Value** |
 | --- | --- |
@@ -132,11 +132,11 @@ The full qualified internet host name of the outgoing SMTP server. |
 | Smart host is used for all local internet domain recipients: | Disabled |
 | Host name lookup: | Dynamic then local |
 
-### Restrictions and Controls
+## Restrictions and Controls
 
-#### Restrictions
+### Restrictions
 
-##### Router Restrictions
+#### Router Restrictions
 
 | **Field** | **Description / Value** |
 | --- | --- |
@@ -147,9 +147,9 @@ The full qualified internet host name of the outgoing SMTP server. |
 | Maximum message size: | 20.480 kbyte |
 | Send all messages as low priority if the message size is between: | Disabled |
 
-#### SMTP Inbound Controls
+### SMTP Inbound Controls
 
-##### Inbound Relay Controls
+#### Inbound Relay Controls
 
 | **Field** | **Description / Value** |
 | --- | --- |
@@ -158,7 +158,7 @@ The full qualified internet host name of the outgoing SMTP server. |
 | Allow messages only from the following internet hosts to be sent to external internet domains: | {empty} |
 | Deny messages from the following internet hosts to be sent to external internet domains* means all) | {empty} |
 
-##### Inbound Relay Enforcement
+#### Inbound Relay Enforcement
 
 | **Field** | **Description / Value** |
 | --- | --- |
@@ -166,7 +166,7 @@ The full qualified internet host name of the outgoing SMTP server. |
 | Exclude these connecting hosts from anti-relay checks: | {empty} |
 | Exceptions for authenticated users: | Allow all authenticated users to relay |
 
-##### DNS Blacklist Filters
+#### DNS Blacklist Filters
 
 | **Field** | **Description / Value** |
 | --- | --- |
@@ -175,7 +175,7 @@ The full qualified internet host name of the outgoing SMTP server. |
 | Desired action when a connecting host is found in a DNS Blacklist: | Log only |
 | Custom SMTP error response for rejected messages: | Your host %s was found in the DNS blacklist at %s |
 
-##### DNS Whitelist Filters
+#### DNS Whitelist Filters
 
 | **Field** | **Description / Value** |
 | --- | --- |
@@ -183,7 +183,7 @@ The full qualified internet host name of the outgoing SMTP server. |
 | DNS Whitelist Sites: | {empty} |
 | Desired action when a connecting host is found in a DNS whitelist: | Silently skip blacklist filters |
 
-##### Private Blacklist Filter
+#### Private Blacklist Filter
 
 | **Field** | **Description / Value** |
 | --- | --- |
@@ -192,7 +192,7 @@ The full qualified internet host name of the outgoing SMTP server. |
 | Desired action when a connecting host is found in the private blacklist: | Log only |
 | Custom SMTP error response for rejected messages: | {Empty} |
 
-##### Private Whitelist Filter
+#### Private Whitelist Filter
 
 | **Field** | **Description / Value** |
 | --- | --- |
@@ -200,7 +200,7 @@ The full qualified internet host name of the outgoing SMTP server. |
 | Whitelist the following hosts: | {Empty} |
 | Desired action when a connecting host is found in the private whitelist: | Silently skip blacklist filters |
 
-##### Inbound Connection Controls
+#### Inbound Connection Controls
 
 | **Field** | **Value** |
 | --- | --- |
@@ -209,7 +209,7 @@ The full qualified internet host name of the outgoing SMTP server. |
 | Deny connections from the following SMTP internet hostnames/IP addresses: | {Empty} |
 | Error limit before connection is terminated | {Empty} |
 
-##### Inbound Sender Controls
+#### Inbound Sender Controls
 
 | **Field** | **Description / Value** |
 | --- | --- |
@@ -217,7 +217,7 @@ The full qualified internet host name of the outgoing SMTP server. |
 | Allow messages only from the following external internet addresses/domains: | {Empty} |
 | Deny messages from the following internet addresses/domains: | {Empty} |
 
-##### Inbound Intended Recipients Controls
+#### Inbound Intended Recipients Controls
 
 | **Field** | **Description / Value** |
 | --- | --- |
@@ -227,7 +227,7 @@ The full qualified internet host name of the outgoing SMTP server. |
 | Allow messages intended only for the following internet addresses: | {Empty} |
 | Deny messages intended for the following internet addresses: | {Empty} |
 
-##### Inbound Sender Domain Authentication Controls
+#### Inbound Sender Domain Authentication Controls
 
 | **Field** | **Description / Value** |
 | --- | --- |
@@ -236,7 +236,7 @@ The full qualified internet host name of the outgoing SMTP server. |
 | Desired action when the sending IP hard fails the SPF check ofr the sender domain | Log and tag the message |
 | Do not perform an SPF check for the following internet hostnames/IP addresses | {Empty} |
 
-##### External Email Notifications
+#### External Email Notifications
 
 | **Field** | **Description / Value** |
 | --- | --- |
@@ -247,9 +247,9 @@ The full qualified internet host name of the outgoing SMTP server. |
 | Text or HTML to add to message | CAUTION: This email is from outside the organization. Unless you trust the sender, don't click links or open attachments as it may be a phishing email, which can steal your information and compromise your computer. |
 | Exceptions for trusted hostnames/Ipaddresses | {Empty} |
 
-#### SMTP Outbound Controls
+### SMTP Outbound Controls
 
-##### Outbound Sender Controls
+#### Outbound Sender Controls
 
 | **Field** | **Description / Value** |
 | --- | --- |
@@ -258,16 +258,16 @@ The full qualified internet host name of the outgoing SMTP server. |
 | Allow messages only from the following Notes addresses to be sent to the Internet: | {Empty} |
 | Deny messages from the following Notes addresses to be sent to the Internet: | {Empty} |
 
-##### Outbound Recipient Controls
+#### Outbound Recipient Controls
 
 | **Field** | **Description / Value** |
 | --- | --- |
 | Allow messages only to recipients in the following Internet domains or hostnames: | {Empty} |
 | Deny messages to recipients in the following Internet domains or hostnames: | {Empty} |
 
-#### Delivery Controls
+### Delivery Controls
 
-##### Delivery Controls
+#### Delivery Controls
 
 | **Field** | **Description / Value** |
 | --- | --- |
@@ -279,7 +279,7 @@ The full qualified internet host name of the outgoing SMTP server. |
 | Deny rules mail forwarding to external internet domains | Enabled |
 | Reverse-Path for forwarded mail | Preserve existing value |
 
-##### Quota Controls
+#### Quota Controls
 
 | **Field** | **Description / Value** |
 | --- | --- |
@@ -287,16 +287,16 @@ The full qualified internet host name of the outgoing SMTP server. |
 | Over quota notification: | None |
 | Over quota enforcement: | Deliver anyway (don’t obey quotas) |
 
-##### Deliver to Junk Folder Controls
+#### Deliver to Junk Folder Controls
 
 | **Field** | **Description / Value** |
 | --- | --- |
 | Delvier untrusted messages to the Junk folder | Enabled |
 | Exceptions for specific recipients | {empty} |
 
-#### Transfer Controls
+### Transfer Controls
 
-##### Transfer Controls
+#### Transfer Controls
 
 | **Field** | **Description / Value** |
 | --- | --- |
@@ -314,12 +314,12 @@ The full qualified internet host name of the outgoing SMTP server. |
 | Low priority mail | 48 hours |
 | Allow users to schedule a delivery time for messages | Enabled |
 
-#### Rules
+### Rules
 No server rules are configured as a standard. They may be configured for special purposes but you should be aware of possible performance degradations.
 
-### Message Disclaimers
+## Message Disclaimers
 
-#### Message Disclaimers
+### Message Disclaimers
 
 | **Field** | **Description / Value** |
 | --- | --- |
@@ -327,37 +327,37 @@ No server rules are configured as a standard. They may be configured for special
 | Add disclaimer to S/MIME signed or encrypted messages: | Disabled |
 | Logging level: | Normal |
 
-### Message Tracking
+## Message Tracking
 Message tracking is currently **mandatory for mail servers**. All other servers can enable or disable this feature as wanted.
 
-#### Basics
+### Basics
 
 | **Field** | **Description / Value** |
 | --- | --- |
 | Message tracking: | Enabled |
 | Don’t track messages for: | {Empty} |
 
-#### Message Tracking Collector Settings
+### Message Tracking Collector Settings
 
 | **Field** | **Description / Value** |
 | --- | --- |
 | Message tracking collection interval: | 15 |
 
-#### Message Tracking Logging Settings
+### Message Tracking Logging Settings
 
 | **Field** | **Description / Value** |
 | --- | --- |
 | Log message subjects | Yes |
 | Don’t log subjects for: | {Empty} |
 
-#### Access Settings
+### Access Settings
 
 | **Field** | **Description / Value** |
 | --- | --- |
 | Allowed to track messages: | LocalDomainAdmins, LocalDomainServers |
 | Allowed to track subjects: | LocalDomainAdmins, LocalDomainServers |
 
-### Message Recall
+## Message Recall
 
 | **Field** | **Description / Value** |
 | --- | --- |
@@ -365,11 +365,11 @@ Message tracking is currently **mandatory for mail servers**. All other servers 
 | Allow recall of messages with unread status | Unread only |
 | Do not allow recall of messages older than | 7 days |
 
-### Advanced
+## Advanced
 
-#### Journaling
+### Journaling
 
-##### Basics
+#### Basics
 
 | **Field** | **Description / Value** |
 | --- | --- |
@@ -380,16 +380,16 @@ Message tracking is currently **mandatory for mail servers**. All other servers 
 | Encrypt on behalf of user: | {Empty} |
 | Journal Recipients | Disable |
 
-##### Database Management
+#### Database Management
 
 | **Field** | **Description / Value** |
 | --- | --- |
 | Method: | Periodic Rollover |
 | Periodicity: | 7 days |
 
-#### Commands and Extensions
+### Commands and Extensions
 
-##### Inbound SMTP Commands and Extensions
+#### Inbound SMTP Commands and Extensions
 
 | **Field** | **Description / Value** |
 | --- | --- |
@@ -403,7 +403,7 @@ Message tracking is currently **mandatory for mail servers**. All other servers 
 | ETRN command: | Disabled |
 | TLS negotiated over TCP/IP port: | Enabled |
 
-##### Outbound SMTP Commands and Extensions
+#### Outbound SMTP Commands and Extensions
 
 | **Field** | **Description / Value** |
 | --- | --- |
@@ -412,9 +412,9 @@ Message tracking is currently **mandatory for mail servers**. All other servers 
 | DSN extension: | Enabled |
 | 8 bit MIME extension: | Enabled |
 
-#### Controls
+### Controls
 
-##### Miscellaneous Controls
+#### Miscellaneous Controls
 
 | **Field** | **Description / Value** |
 | --- | --- |
@@ -422,27 +422,23 @@ Message tracking is currently **mandatory for mail servers**. All other servers 
 Remark: equals to Notes.ini variable Log_Mailrouting=30 |
 | Out-of-Office Type | Service |
 
-##### 
 
-##### Additional Controls (Delivery and Transfer)
+### Additional Controls (Delivery and Transfer)
 
 | **Field** | **Description / Value** |
 | --- | --- |
 | Restrict name lookups to primary directory only: | Disabled |
 | Cluster failover: | Enabled for all transfers in this domain |
 
-##### 
 
-##### Advanced Transfer Controls
+#### Advanced Transfer Controls
 
 | **Field** | **Description / Value** |
 | --- | --- |
 | Ignore message priority: | Disabled |
 | Dynamic cost reset interval: | 60 minutes |
 
-##### 
-
-##### Undeliverable Mail
+#### Undeliverable Mail
 
 | **Field** | **Description / Value** |
 | --- | --- |
@@ -452,7 +448,7 @@ Remark: equals to Notes.ini variable Log_Mailrouting=30 |
 | Time between dead mail delivery attempts | 120 |
 | Internal Internet domains | {Empty} |
 
-##### Failure Messages
+#### Failure Messages
 
 | **Field** | **Description / Value** |
 | --- | --- |
@@ -470,38 +466,38 @@ Remark: equals to Notes.ini variable Log_Mailrouting=30 |
 | Quota error notification: | {empty} |
 | Transfer and delay notifications | {empty} |
 
-## MIME
+# MIME
 
-### Basics
+## Basics
 
-#### Basic
+### Basic
 
 | **Field** | **Description / Value** |
 | --- | --- |
 | Primary character set group: | English |
 | Secondary character set groups: |  |
 
-### Conversion Options
+## Conversion Options
 
-#### General
+### General
 
-##### General Conversion Options
+#### General Conversion Options
 
 | **Field** | **Description / Value** |
 | --- | --- |
 | Return receipts: | Disabled |
 
-#### Inbound
+### Inbound
 
-##### Inbound Conversion Options
+#### Inbound Conversion Options
 
 | **Field** | **Description / Value** |
 | --- | --- |
 | Use character set auto-detection if message has no character set information: | Yes |
 
-#### Outbound
+### Outbound
 
-##### Outbound Conversion Options
+#### Outbound Conversion Options
 
 | **Field** | **Description / Value** |
 | --- | --- |
@@ -511,13 +507,14 @@ Remark: equals to Notes.ini variable Log_Mailrouting=30 |
 | Outbound line length: | 75 |
 | Lookup Internet address for all Notes addresses when Internet address is not defined in document: | Disabled |
 
-### Settings by Character Set Groups
+## Settings by Character Set Groups
 
 | **Field** | **Description / Value** |
 | --- | --- |
 | For outbound messages options below use all possible choices | Disabled |
 
-#### Inbound Message Options
+### Inbound Message Options
+
 **Note:** The following settings have to be set for every different character set group!
 
 | **Field** | **Description / Value** |
@@ -528,15 +525,12 @@ Remark: equals to Notes.ini variable Log_Mailrouting=30 |
 | Plain Text: | Default Monospace |
 | Plain Text Size: | 10 |
 
-#### Outbound Message options
+### Outbound Message options
 **Note:** The following settings have to be set for every different character set group!
 
-| **Character Set Group** | **Header****
-Character Set** | **Header****
-Encoding** | **Body****
-Characeter Set** | **Body****
-Encoding** |
-| --- | --- | --- | --- | --- |
+
+| Character Set Group | Header Character Set | Header Encoding | Body Character Set | Body Encoding |
+| --- | --- | --- | --- |  --- | 
 | Arabic | Windows-1256 | Base 64 | Windows-1256 | Base 64 |
 | Baltic Rim | Windows-1257 | Quoted Printable | Windows-1257 | Quoted Printable |
 | Central Europe | ISO-8859-2 | Quoted Printable | ISO-8859-2 | Quoted Printable |
@@ -554,11 +548,11 @@ Encoding** |
 | Vietnamese | Windows-1258 | Quoted Printable | Windows-1258 | Quoted Printable |
 | Western | ISO-8859-1 | Quoted Printable | ISO-8859-1 | Quoted Printable |
 
-### Advanced
+## Advanced
+
+### Advanced Inbound Message Options
 
 #### Advanced Inbound Message Options
-
-##### Advanced Inbound Message Options
 
 | **Field** | **Description / Value** |
 | --- | --- |
@@ -568,9 +562,9 @@ Encoding** |
 | For non-MIME messages or MIME messages with an unknown character set, 8-bit character set is assumed to be: | Default |
 | Character set name aliases | {Empty} maps to {Empty} |
 
-#### Advanced Outbound Message Options
+### Advanced Outbound Message Options
 
-##### Advanced Outbound Message Options
+#### Advanced Outbound Message Options
 
 | **Field** | **Description / Value** |
 | --- | --- |

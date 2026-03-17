@@ -18,7 +18,6 @@ has_children: true
 {:toc}
 </details>
 
-
 ## Operating System
 
 ## OS Specific Settings
@@ -29,20 +28,28 @@ The virus pattern files should be updated at least once a day.
 If a local pattern update infrastructure (for a central management of the antivirus software) is available the server should be connected to it to make sure to have the current settings and virus pattern files available. 
 
 Please follow the local upgrade policy to make sure that you have the most current version of the antivirus software installed.
+
 The following configuration changes for the antivirus software have to be made:
-Disable OnAccess Scanner 
+1. Disable OnAccess Scanner
+
 This has to be disabled because of performance reasons
-Exclude the following file extensions from scanning
+
+2. Exclude the following file extensions from scanning
+
+This will prevent operating antivirus scanners to scan file types it can not handle.
+
 - *.NSF
 - *.NTF
 - *.NCF
-- *.NS5
 - *.NT5
 - *.TXN
 - *.BOX
 - *.NLO
 
-Exclude the following directories from scanning
+3. Exclude the following directories from scanning
+
+This will prevent operating antivirus scanners to scan directories that are used by Domino.
+
 - *\NOTES*\ 
 - *\view-rebuild\
 - *\Logfiles\
@@ -83,10 +90,11 @@ If the Domino server is connected to a Windows Domain Controller the server time
 
 ### Regional Settings
 The settings for Date and Time within the regional settings of the operating system should be set to the following values:
-Short date format:		yyyy-mm-dd (Sample: 2006-12-31)
-Time:				HH:mm:ss (Sample: 20:30:00)
-**
-All Domino applications** must be designed in a way that they work independently of the operating system representation of date and time. 
+- Short date format: yyyy-mm-dd (Sample: 2006-12-31)
+- Time: HH:mm:ss (Sample: 20:30:00)
+
+All Domino applications must be designed in a way that they work independently of the operating system representation of date and time.
+
 **Attention!**
 Please be aware that changing the regional settings might affect existing applications.
 Also, please keep in mind that the Domino server uses the "HKEY_USERS\.DEFAULT" settings!

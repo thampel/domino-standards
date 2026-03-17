@@ -10,3 +10,4 @@ $RECYCLE.BIN/
 ._*
 release/
 *.docx
+/convert_docx.py

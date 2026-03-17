@@ -1,9 +1,9 @@
 ---
 layout: default
-title: "Hardware"
+title: "Software"
 nav_order: 3
 parent: "Home"
-description: "HCL Domino Standards"
+description: "HCL Domino - Software Standards"
 has_children: true
 ---
 

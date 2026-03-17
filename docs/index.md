@@ -6,7 +6,6 @@ description: "HCL Domino Standards"
 has_children: true
 ---
 
-
 <h1>HCL Domino Standards</h1>
 
 <details close markdown="block">

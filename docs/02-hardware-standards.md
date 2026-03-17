@@ -3,7 +3,7 @@ layout: default
 title: "Hardware"
 nav_order: 2
 parent: "Home"
-description: "HCL Domino Standards"
+description: "HCL Domino - Hardware Standards"
 has_children: true
 ---
 
@@ -18,12 +18,14 @@ has_children: true
 {:toc}
 </details>
 
-
-
 # Hardware Standards
-The following standards describe some basic parameters for Domino servers. The parameters are not defined down to a model level as server models will change very often.
+The following standards describe some basic parameters for Domino servers. The parameters are not defined down to a level of detail such as server models as those will change quite frequently.
 
 ## Server Classes
+
+Small
+Medium
+Large
 
 ## Server Parameters
 CPU

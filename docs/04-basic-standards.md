@@ -1,3 +1,23 @@
+---
+layout: default
+title: "Basic Standards"
+nav_order: 3
+parent: "Home"
+description: "HCL Domino - Basic Standards"
+has_children: true
+---
+
+<h1>Basic Standards</h1>
+
+<details close markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+
 # Basic Standards
 This section describes the core standards for an HCL Domino environment.
 

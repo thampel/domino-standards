@@ -19,6 +19,7 @@ has_children: true
 </details>
 
 ## Purpose
+
 The purpose of this document is to describe the recommended settings for an HCL Domino environment.
 
 ## Revision History
@@ -31,6 +32,7 @@ The purpose of this document is to describe the recommended settings for an HCL 
 | 1.0 | 2026.03.08 | Released | (N) |
 
 ## References
+
 This document is based on and refers to the following documents:
 
 | **Type** | **Title** |  | **Author** |
@@ -38,6 +40,7 @@ This document is based on and refers to the following documents:
 |  |  |  |  |
 
 ### Symbols
+
 This chapter describes the symbolic names used in this document.
 
 | **Element** | **Description** |
@@ -54,9 +57,5 @@ This chapter describes the symbolic names used in this document.
 | [DirNr] | 4 digits serial directory number from 0000 to 9999, these are the first 4 digits from the database serial number [XXXXXX] |
 | [Home-Appl-Server] | Explicit abbreviated server name |
 | [Home-HUB-Server] | Explicit abbreviated server name |
-| [HomeServer] | Abbreviated Lotus Notes name of home/mail server and/or also administration server |
-| [Username] | Abbreviated Lotus Notes User Name with Certificate and Organization
-e.g. “Peter Mueller/User/Org” |
-| [Level1] | 2 letters for 1st level of organizational belonging, usually Division |
-| [Level2] | 2 to 4 letters for 2nd level of organizational belonging, usually BAU |
-| [Level3] | 3rd level of organizational belonging, usually BUU |
+| [HomeServer] | Abbreviated Notes name of home/mail server and/or also administration server |
+| [Username] | Abbreviated Notes User Name with Certificate and Organization, e.g. “Peter Mueller/User/Org” |

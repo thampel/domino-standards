@@ -1,0 +1,12 @@
+/mkdocs-preview.sh
+.DS_Store
+.env/*
+.venv/*
+Thumbs.*
+ehthumbs.*
+[Dd]desktop.ini
+*.lnk
+$RECYCLE.BIN/
+._*
+release/
+*.docx

@@ -54,12 +54,13 @@ File names shall be unique within the enterprise environment, that’s why all a
 All these application file names must be registered within the Database Catalog to avoid naming conflicts.
 
 Syntax: 
- “DB\” + “DB” + [DirNr] + “\” + “DB” + [XXXXXX] + “.NSF”
+- “DB\” + “DB” + [DirNr] + “\” + “DB” + [XXXXXX] + “.NSF”
 
 **Example:**
-DB\DB0000\DB000002.NSF
-DB\DB0000\DB000041.NSF
-DB\DB0001\DB000102.NSF
+
+- DB\DB0000\DB000002.NSF
+- DB\DB0000\DB000041.NSF
+- DB\DB0001\DB000102.NSF
 
 ## User Names
 A user name is the name that Notes recognizes when you login to Notes and access servers, databases, and documents. It is in hierarchical format, which means common name and certificate authority's (CA) name makes up a user name. Common name is usually first, middle, and last name. The CA is the entity that created the certificates in the User ID. For example, if the User name is Joe User/User/Org, Joe User is your common name and /User/Org is the CA's name. 
@@ -74,10 +75,12 @@ A user name contains these elements
 e.g. “Joe B Smith” |
 | Certificate (OU) | Certificate Authority (CA) used to create this user |
 | Organization (O) | Organization that the user belongs to, for details see chapter **XXXX** |
-Recommendation for user names is
-For real users, only given name, middle initial and Surname should be used to uniquely define a person. Do not use department or other qualifier in the user’s name.
-Don't use a third layer (OU2) within Notes certificates and don’t use a “unique orgunit” to uniquely define a person.
+
+**Recommendation**
+
+For real users, only given name, middle initial and Surname should be used to uniquely define a person. Do not use department or other qualifier in the user’s name. Don't use a third layer (OU2) within Notes certificates and don’t use a “unique orgunit” to uniquely define a person.
 e.g. Harald Mueller/Finance/User/Org
+
 Upper and lower cases need to be used with care.
 It’s not acceptable to use only upper or only lower cases.
 Expiration time should be between 6 months and 2 years.
@@ -110,25 +113,23 @@ For any other local / country characters, please refer to chapter **XXXXXX**
 
 ### Last Name / Surname
 Standards for the surname is
-Maximum length of 40 characters.
-Uppercase and lowercase alpha characters (A - Z)
-Numbers (0-9) are NOT to be used as part of the last name / surname
-dash (-) can be used to join multi part names,
-e.g. “Jan Mollefors Lokken” will be named “Jan Mollefors-Lokken”
-Uppercase and lowercases characters can be mixed within the name
-e.g. “McConnell” or “deMouse”
-Upper and lower cases need to be used with care.
-It’s not acceptable to use only upper or only lower cases.
-Do not use blanks ( ) or apostrophes (‘) should be removed.
-So for “Joel O’Donald” the last name would be “ODonald”
+- Maximum length of 40 characters.
+- Uppercase and lowercase alpha characters (A - Z)
+- Numbers (0-9) are NOT to be used as part of the last name / surname
+- dash (-) can be used to join multi part names, <br> e.g. “Jan Mollefors Lokken” will be named “Jan Mollefors-Lokken”
+- Uppercase and lowercases characters can be mixed within the name e.g. “McConnell” or “deMouse”
+- Upper and lower cases need to be used with care.
+- It’s not acceptable to use only upper or only lower cases.
+- Do not use blanks ( ) or apostrophes (‘) should be removed. So for “Joel O’Donald” the last name would be “ODonald”
 
 ### Middle initials
 If the combination out of surname and given name is not unique within a country, a middle initial has to be used to differentiate between users.
-Maximum length of 5 characters
-Allowed characters as described in chapter XXXX
-Not allowed to use dash (-)
-Not allowed to use dot (.)
-Usage:
+- Maximum length of 5 characters, the allowed characters are described in chapter XXXX
+- Not allowed to use dash (-)
+- Not allowed to use dot (.)
+
+**Usage:**
+
 Where the combination of Surname and Given name is unique then no initials need be specified. A new user having the same name as an existing user must get a middle initial while existing users will keep their user name without any change. 
 
 ### National Characters 
@@ -146,6 +147,7 @@ Different languages have different additional characters. The following table sh
 
 ### Internet Mail Addresses for People
 Internet mail addresses (email addresses) are computed based on the users first name, middle initial, last name and ISO country code.
+
 **Syntax:**
 firstname.m.lastname@company.COM
 Allowed characters
@@ -168,23 +170,29 @@ The internet mail address will change when the user name changes.
 ### Unrestricted Agents
 
 ## Public Groups
+
 Public groups are Domino groups stored in the name and address book or a cascaded secondary address book for shared usage.
 
 ### Restrictions and Limitations
+
 For public groups only the following characters are allowed to be used for List Name and List Members.
-letters A through Z
-numbers 0 through 9
-ampersand ( & )
-dash ( - )
-underscore ( _ )
-hash ( # )
-dollar sign ( $ )
-percent sign ( % )
+- letters A through Z
+- numbers 0 through 9
+- ampersand ( & )
+- dash ( - )
+- underscore ( _ )
+- hash ( # )
+- dollar sign ( $ )
+- percent sign ( % )
+
 **Limitations**
+
 Although technically possible, it is not allowed to use ALIAS names for groups within the Domain. An alias name is a list name separated by semicolon ( ; ) or comma ( , )  Alternative names or a second names for the same group in the public name and address book are unmanageable and may cause problems.
 Do not use a backslash ( \ ) or any other characters not included in the list of allowed characters above, because they can cause unexpected results.  
 Maximum length for group names is 64 characters
+
 **Recommendations**
+
 For easier administration, use a name without spaces. Do not use a name that is in use as the name of an organizational unit in the hierarchical name scheme.
 While the use of the period ( . ) currently is not prevented by Lotus, it may be advisable to avoid its use, in consideration of possible future conflicts with Internet addressing.  At this time though there are no known issues relative to using the period in Group names.
 
@@ -200,24 +208,25 @@ While the use of the period ( . ) currently is not prevented by Lotus, it may be
 | Prefix | “$” = dollar sign |
 
 #### Administration of Access Only Groups in Global Domain
-Each database has a number of related Access Only Groups. Each database has one or several defined Database Managers. 
-The Database Manager administrates the Access Only Groups belonging to the specific database. The Access Only Groups are automatically created when deploying a database.
+
+Each database has a number of related Access Only Groups. Each database has one or several defined Database Managers. The Database Manager administrates the Access Only Groups belonging to the specific database. The Access Only Groups are automatically created when deploying a database.
 
 #### Group Naming Standard Global Domain
+
 Syntax: 
-$DB_[XXXXXX]_[AccessLevel]_[Role]
+- $DB_[XXXXXX] _ [AccessLevel] _ [Role]
 
 
 | **Element** | **Description** |
 | --- | --- |
-| [AccessLevel] | This part will denote the various access levels user groups will have on the database. You should make a separate group for each access level your database requires. Thus you can have "Editors", "Readers", "Authors", "Depositors" and “NoAccess” <br> Note:  <br> Manager access will be provided to administrators only <br> Designer access is not set by default, because design updates are to be done outside of the production environment <br> Developers will get Designer access rights as highest level.
-Users will have Editor access as highest level. |
-| [Role] | Optional. 
-If you need different roles within one access level, you should make distinct groups, e.g. _Accounting or _Sales. These suffixes are used to the right of the access level. |
+| [AccessLevel] | This part will denote the various access levels user groups will have on the database. You should make a separate group for each access level your database requires. Thus you can have "Editors", "Readers", "Authors", "Depositors" and “NoAccess” <br> Note:  <br> Manager access will be provided to administrators only <br> Designer access is not set by default, because design updates are to be done outside of the production environment <br> Developers will get Designer access rights as highest level. Users will have Editor access as highest level. |
+| [Role] | Optional. If you need different roles within one access level, you should make distinct groups, e.g. _Accounting or _Sales. These suffixes are used to the right of the access level. |
+
 **Example: **
-$DB_000034_Authors_Projleader
-$DB_000034_Authors_2
-$DB_000034_Authors_XYZ
+- $DB_000034_Authors_Projleader
+- $DB_000034_Authors_2
+- $DB_000034_Authors_XYZ
+
 The suffix is optional and can be anything (A-Z, 0-9). The length of the group name is to be limited to a maximum number of characters.
 
 ### Multi purpose Groups
@@ -286,6 +295,7 @@ Make sure only to use the characters described in chapter 5.7.1
 ### Deny Access Groups
 
 ## Rooms and Resources
+
 A room or resource name is using similar components than a Notes user name, it consists out of 3 components, for each element only the following characters can be used:
 Uppercase and lowercase alpha characters (A - Z)
 Numbers 0 through 9
@@ -293,11 +303,15 @@ Space ( )
 dash (-) can be used to join multi part names,
 Upper and lower cases need to be used with care.
 It’s not acceptable to use only upper-, or only lower cases.
+
 **Remark**
+
 Each room & resource name has to be absolutely unique.
 Otherwise the functionality of room & resource booking cannot be guaranteed.
 Although technically possible, it’s not recommended to use international characters as part of any room or resource component.
+
 **Syntax**
+
 [CN] / [OU1] / [O]
 
 | **Component** | **Description** |
@@ -308,6 +322,7 @@ For details, please refer to chapter 5.8.2 |
 | [O] | Site, details are described in chapter 5.8.3 |
 
 ### Basic Resource Name
+
 Descriptive and (on a specific site) unique name of the room or resource.
 Recommendations
 Choose a basic resource name that will identify the room for everyone, even visitors who don’t know the building
@@ -319,26 +334,33 @@ e.g. “Room 412” is in most buildings located on the 4th floor anyway.
 ### OrgUnit1 Component
 This component is only used for resources, and not used for rooms at all. It contains the resource category, which can be anything that you like, as long as the following rules are met
 Only using allowed characters as specified in chapter 5.8
+
 **Example**
-“CompanyCars”
+
+- “CompanyCars”
 
 ### Site Component
 The site name is created by using the ISO country code, followed by the two letter city code. Additionally to the allowed characters, the following characters can be used:
-Underscore ( _ ), which is only to be used to separate elements of the site name 
+Underscore ( _ ), which is only to be used to separate elements of the site name
+
 **Syntax**
-[CC]_CityCode
+- [CC]_CityCode
+
 **Remark**
-Minimum length of a site name is 3 characters
-Maximum length of a site name 30 characters 
+- Minimum length of a site name is 3 characters
+- Maximum length of a site name 30 characters 
+
 **Example**
-DE_MK
-DE_EH
+- DE_MK
+- DE_EH
 
 ### Summary
 All these 3 components together are building a full room / resource name
+
 Examples for rooms
-Room412/DE_MK
-A204/DE_MK
+- Room412/DE_MK
+- A204/DE_MK
+
 Examples for resources
-Olympus/Digitalcamera/ DE_MK
-Canon Stationary/PC Projector/ DE_MK
+- Olympus/Digitalcamera/DE_MK
+- Canon Stationary/PC Projector/DE_MK

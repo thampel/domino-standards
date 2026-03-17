@@ -30,11 +30,9 @@ If a local pattern update infrastructure (for a central management of the antivi
 Please follow the local upgrade policy to make sure that you have the most current version of the antivirus software installed.
 
 The following configuration changes for the antivirus software have to be made:
-1. Disable OnAccess Scanner
+- Disable OnAccess Scanner, this has to be disabled because of performance reasons
 
-This has to be disabled because of performance reasons
-
-2. Exclude the following file extensions from scanning
+Exclude the following file extensions from scanning
 
 This will prevent operating antivirus scanners to scan file types it can not handle.
 
@@ -46,8 +44,7 @@ This will prevent operating antivirus scanners to scan file types it can not han
 - *.BOX
 - *.NLO
 
-3. Exclude the following directories from scanning
-
+Exclude the following directories from scanning
 This will prevent operating antivirus scanners to scan directories that are used by Domino.
 
 - *\NOTES*\ 

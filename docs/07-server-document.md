@@ -24,18 +24,17 @@ The following server configuration applies to Domino servers of version 14.5 and
 # Basics
 
 ## Basics
+
 | **Field** | **Description / Value** |
 | --- | --- |
 | Server Name | Abbreviated Name of Domino server |
 | Server Title | Server Title, should include server type (see 4.2) and international Location code of server location, e.g. DE-MUC for Germany-Munich |
-| Domain Name | Name of domain where this server belongs to
-Remark: for naming standards see section |
-| Fully qualified Internet host name | Full qualified host name of this server, corresponding to the server name. Don’t use the operating system’s host name.
-Remark: for naming standards see section |
-| Cluster name | Optional, cluster name, only used if server is a member of a cluster
-Remark: for naming standards see section |
+| Domain Name | Name of domain where this server belongs to Remark: for naming standards see section |
+| Fully qualified Internet host name | Full qualified host name of this server, corresponding to the server name. Don’t use the operating system’s host name. Remark: for naming standards see section |
+| Cluster name | Optional, cluster name, only used if server is a member of a cluster Remark: for naming standards see section |
 | Load Internet configurations from Server\Internet Sites documents: | Enabled |
 | Maximum formula execution time: | 120 seconds |
+
 
 | **Field** | **Description / Value** |
 | --- | --- |

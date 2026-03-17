@@ -34,18 +34,18 @@ Wildcard configuration documents or configuration for a whole group of servers a
 | IMAP server returns exact size of message: | Enabled |
 | POP3 server returns exact size of message: | Disabled |
 | License Tracking: | Disabled |
-| Minimum Client Level: | {blank} |
-| Maximum Client Level: | {blank} |
-| Minimum HCL Client Application Access Level (Does not pertin to Server Administrators) | {blank} |
+| Minimum Client Level: | {empty} |
+| Maximum Client Level: | {empty} |
+| Minimum HCL Client Application Access Level (Does not pertin to Server Administrators) | {empty} |
 | Configuration for Domino Server with Shindig | Disabled |
-| Comments: | {blank} |
+| Comments: | {empty} |
 
 ### Tivoli Enterprise Console Settings
 
 | **Field** | **Description / Value** |
 | --- | --- |
 | Enable Logging to Tivoli Enterprise Console | Disabled |
-| IP Address: | {blank} |
+| IP Address: | {empty} |
 | Port Number: | 5529 |
 
 ## Security
@@ -92,7 +92,7 @@ Wildcard configuration documents or configuration for a whole group of servers a
 | **Field** | **Description / Value** |
 | --- | --- |
 | Automatic Update is enabled | Disabled |
-| AUT service DNS name | {blank} |
+| AUT service DNS name | {empty} |
 | Maximum number of download sessions | 30 |
 
 ### Trust Certificates 
@@ -102,7 +102,7 @@ List of trusted certificates if AUT feature is enabled.
 
 | **Field** | **Description / Value** |
 | --- | --- |
-| Smart Upgrade Database link: | {blank} |
+| Smart Upgrade Database link: | {empty} |
 | Limit Concurrent Smart Upgrade: | Disabled |
 
 ### Provisioning
@@ -128,7 +128,7 @@ List of trusted certificates if AUT feature is enabled.
 | Relay host for messages leaving the local internet domain: | {smtp-relay-server}
 The full qualified internet host name of the outgoing SMTP server. |
 | Use authentication when sending messages to the relay host | Disabled |
-| Local Internet domain smart host: | {blank} |
+| Local Internet domain smart host: | {empty} |
 | Smart host is used for all local internet domain recipients: | Disabled |
 | Host name lookup: | Dynamic then local |
 
@@ -140,10 +140,10 @@ The full qualified internet host name of the outgoing SMTP server. |
 
 | **Field** | **Description / Value** |
 | --- | --- |
-| Allow mail only from domains: | {blank} |
-| Deny mail from domains: | {blank} |
-| Allow mail only from the following organizations and organizational units: (*/Acme, */Sales/Corp) | {blank} |
-| Deny mail only from the following organizations and organizational units: (*/Acme, */Sales/Corp) | {blank} |
+| Allow mail only from domains: | {empty} |
+| Deny mail from domains: | {empty} |
+| Allow mail only from the following organizations and organizational units: (*/Acme, */Sales/Corp) | {empty} |
+| Deny mail only from the following organizations and organizational units: (*/Acme, */Sales/Corp) | {empty} |
 | Maximum message size: | 20.480 kbyte |
 | Send all messages as low priority if the message size is between: | Disabled |
 
@@ -153,17 +153,17 @@ The full qualified internet host name of the outgoing SMTP server. |
 
 | **Field** | **Description / Value** |
 | --- | --- |
-| Allow messages to be sent only to the following external internet domains: | {blank} |
+| Allow messages to be sent only to the following external internet domains: | {empty} |
 | Deny messages to be sent to the following external internet domains: (* means all) | * |
-| Allow messages only from the following internet hosts to be sent to external internet domains: | {blank} |
-| Deny messages from the following internet hosts to be sent to external internet domains* means all) | {blank} |
+| Allow messages only from the following internet hosts to be sent to external internet domains: | {empty} |
+| Deny messages from the following internet hosts to be sent to external internet domains* means all) | {empty} |
 
 ##### Inbound Relay Enforcement
 
 | **Field** | **Description / Value** |
 | --- | --- |
 | Perform Anti-Relay enforcement for these connecting hosts: | All connecting hosts <br> . |
-| Exclude these connecting hosts from anti-relay checks: | {blank} |
+| Exclude these connecting hosts from anti-relay checks: | {empty} |
 | Exceptions for authenticated users: | Allow all authenticated users to relay |
 
 ##### DNS Blacklist Filters
@@ -171,7 +171,7 @@ The full qualified internet host name of the outgoing SMTP server. |
 | **Field** | **Description / Value** |
 | --- | --- |
 | DNS Blacklist filters: | Disabled |
-| DNS Blacklist sites: | {blank} |
+| DNS Blacklist sites: | {empty} |
 | Desired action when a connecting host is found in a DNS Blacklist: | Log only |
 | Custom SMTP error response for rejected messages: | Your host %s was found in the DNS blacklist at %s |
 
@@ -180,7 +180,7 @@ The full qualified internet host name of the outgoing SMTP server. |
 | **Field** | **Description / Value** |
 | --- | --- |
 | DNS Whitelist Filters: | Disabled |
-| DNS Whitelist Sites: | {blank} |
+| DNS Whitelist Sites: | {empty} |
 | Desired action when a connecting host is found in a DNS whitelist: | Silently skip blacklist filters |
 
 ##### Private Blacklist Filter
@@ -271,7 +271,7 @@ The full qualified internet host name of the outgoing SMTP server. |
 
 | **Field** | **Description / Value** |
 | --- | --- |
-| Maximum delivery threads: | {blank} |
+| Maximum delivery threads: | {empty} |
 | Encrypt all delivered mail: | Disabled |
 | Pre-delivery agents: | Enabled |
 | Pre-delivery agent timeout: | 30 seconds |
@@ -292,7 +292,7 @@ The full qualified internet host name of the outgoing SMTP server. |
 | **Field** | **Description / Value** |
 | --- | --- |
 | Delvier untrusted messages to the Junk folder | Enabled |
-| Exceptions for specific recipients | {blank} |
+| Exceptions for specific recipients | {empty} |
 
 #### Transfer Controls
 
@@ -300,8 +300,8 @@ The full qualified internet host name of the outgoing SMTP server. |
 
 | **Field** | **Description / Value** |
 | --- | --- |
-| Maximum transfer threads: | {blank} |
-| Maximum concurrent transfer threads: | {blank} |
+| Maximum transfer threads: | {empty} |
+| Maximum concurrent transfer threads: | {empty} |
 | Maximum hop count: | 25 |
 | Low priority mail routing time range: | 18:00 – 21:00 |
 | Low priority delay notification: | Disabled |
@@ -457,18 +457,18 @@ Remark: equals to Notes.ini variable Log_Mailrouting=30 |
 | **Field** | **Description / Value** |
 | --- | --- |
 | Failure messages for the conditions below are specified by: | Text file |
-| Transfer failure: | {blank} |
-| Delivery failure: | {blank} |
-| Message expiration: | {blank} |
-| Domain failure: | {blank} |
-| Server failure: | {blank} |
-| Username failure: | {blank} |
-| Size failure: | {blank} |
-| Restriction failure: | {blank} |
-| Delay notification: | {blank} |
-| Quota warning notification: | {blank} |
-| Quota error notification: | {blank} |
-| Transfer and delay notifications | {blank} |
+| Transfer failure: | {empty} |
+| Delivery failure: | {empty} |
+| Message expiration: | {empty} |
+| Domain failure: | {empty} |
+| Server failure: | {empty} |
+| Username failure: | {empty} |
+| Size failure: | {empty} |
+| Restriction failure: | {empty} |
+| Delay notification: | {empty} |
+| Quota warning notification: | {empty} |
+| Quota error notification: | {empty} |
+| Transfer and delay notifications | {empty} |
 
 ## MIME
 
@@ -577,7 +577,7 @@ Encoding** |
 | Macintosh attachment conversion: | AppleDouble (base64 only) |
 | RFC822 phrase handling: | Use CN as phrase |
 | Internet Mail server sends Notes private items in messages: | Disabled |
-| Always send the following Notes items in headers: | {Blank} |
+| Always send the following Notes items in headers: | {empty} |
 | Notes items to be removed from headers: | $Mailer
 $MIMETrack
 Received |
@@ -893,7 +893,7 @@ When enabled these two logging types are needed for Activity Trends. |
 
 | **Field** | **Description / Value** |
 | --- | --- |
-| Local databases containing trends data from other servers: | {blank} |
+| Local databases containing trends data from other servers: | {empty} |
 
 ## Diagnostics
 Diagnostic collection is used to collect all Domino crash information of every server on one central point in the domain. To enable this option a Fault report mail-in database has to be created on one central server in the domain.

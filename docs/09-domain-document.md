@@ -61,7 +61,7 @@ You have to create a global domain document for every Internet domain which is u
 | **Field** | **Description / Value** |
 | --- | --- |
 | Outbound mail restriction: | Restrict to global domain |
-| Country name: | {blank} |
-| ADMD name: | {blank} |
-| PRMD name: | {blank} |
+| Country name: | {empty} |
+| ADMD name: | {empty} |
+| PRMD name: | {empty} |
 | Domino domain attribute: | None |

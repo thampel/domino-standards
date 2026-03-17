@@ -49,8 +49,7 @@ This section describes the standard features that are allowed to be used within 
 | Event Monitor | Events |  |
 | Smart Upgrade | Software distribution system which allows to upgrade existing Notes clients a higher release. |  |
 | SMTP Mail Routing | Convert Notes messages to SMTP mails for routing mails to internet. |  |
-| SMTP Listener | Listen for incoming SMTP mails.
-to be used for dedicated SMTP Servers only |  |
+| SMTP Listener | Listen for incoming SMTP mails. to be used for dedicated SMTP Servers only |  |
 | Activity Trends Collector | Runs the Activity Trends Collector which performs historical and trended analysis on Domino Activity data. |  |
 | Chronos | Updates full-text indexes that are marked to be updated hourly, daily, or weekly. | X |
 | Change Manager | Domino Change Manager |  |
@@ -58,17 +57,14 @@ to be used for dedicated SMTP Servers only |  |
 | MTC | Message Tracking | X |
 
 ## Restricted features
-Lotus Domino features listed in this section require explicit approval from the EPCOS Global Service Owner for Mail & Groupware and the EPCOS Global Security Manager before using.
 
 | **Task/Feature** | **Description** |
 | --- | --- |
 | CA process | Domino Built In process for automated handling of User ID’s and certificates |
-| SNMP
-- QuerySet
-- Interceptor | SNMP protocol for Domino |
+| SNMP, QuerySet, Interceptor | SNMP protocol for Domino |
 | IMAP Server | Using domino as an IMAP server |
 | POP3 Server | Using domino as an POP3 server |
-| LDAP Server | Using domino as an LDAP server <br> Within EPCOS the global LDAP services have to be used |
+| LDAP Server | Using domino as an LDAP server |
 | Billing | Collects all generated billing information. |
 | DIIOP | Allows COBRA applications to access a domino server |
 | Shared Mail | Stores all mail data in a single database instead of using individual mail files for each user |

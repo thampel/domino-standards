@@ -1,14 +1,33 @@
-# Naming Standards
+---
+layout: default
+title: "Naming Standards"
+nav_order: 5
+parent: "Home"
+description: "HCL Domino Standards - Naming Standards"
+has_children: true
+---
+
+<h1>Naming Standards</h1>
+
+<details close markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+
 
 ## Domain Names
 
 ## Cluster Names
 When Domino servers are clustered a cluster name is to be defined. A cluster name must be unique across the organization and across all servers that a user is accessing.
-Syntax: 
+Syntax:
 [TYPE]-[CC]-CLUSTER[XX]
 Examples:
-APPL-CH-CLUSTER01
-MAIL-DE-CLUSTER02
+- APPL-CH-CLUSTER01
+- MAIL-DE-CLUSTER02
 
 ### Server Common Name Standard
 To Be Done

@@ -1,4 +1,22 @@
-# Domain Document
+---
+layout: default
+title: "Domain Document"
+nav_order: 9
+parent: "Home"
+description: "HCL Domino Standards - Domain Document"
+has_children: true
+---
+
+<h1>Domain Document</h1>
+
+<details close markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
 
 ## Global Domain Document
 You have to create a global domain document for every Internet domain which is used in the Internet address of one of your users / mail-in databases in that domain.

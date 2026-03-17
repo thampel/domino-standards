@@ -1,5 +1,24 @@
-# Server Configuration Document
-For each server a standalone configuration document should to be created in the Domino Directory. 
+---
+layout: default
+title: "Server Configuration Document"
+nav_order: 8
+parent: "Home"
+description: "HCL Domino Standards - Server Configuration Document"
+has_children: true
+---
+
+<h1>Server Configuration Document</h1>
+
+<details close markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+
+For each server a standalone configuration document should to be created in the Domino Directory.
 Wildcard configuration documents or configuration for a whole group of servers are not recommended to prevent changes on more than one server by accident.
 
 ## Basics

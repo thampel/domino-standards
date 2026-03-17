@@ -1,4 +1,23 @@
-# Domino Feature usage
+---
+layout: default
+title: "Feature Usage"
+nav_order: 6
+parent: "Home"
+description: "HCL Domino Standards - Features"
+has_children: true
+---
+
+<h1>Domino Feature usage</h1>
+
+<details close markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+
 Domino offers various new features, for security and standardization reasons only a limited set is allowed to be used within the standardized Domino environment.
 
 ## Standard features

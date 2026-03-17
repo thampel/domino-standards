@@ -1,11 +1,29 @@
-# Server Document
-This section describes the standard settings for the different server types that are in use within the Domino environment. All settings are mandatory except otherwise specified.
-The following server configuration applies to Domino R14.5 servers and above, older versions of Domino servers some elements can not be found and are to be ignored.
+---
+layout: default
+title: "Server Document"
+nav_order: 7
+parent: "Home"
+description: "HCL Domino Standards"
+has_children: true
+---
+
+<h1>Server Document</h1>
+
+<details close markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+
+This section describes the standard settings for the different server types that are in use within the Domino environment. All settings are mandatory except otherwise noted.
+The following server configuration applies to Domino servers of version 14.5 and above, for older versions of the Domino directory template some elements can not be found in the form and are to be ignored.
+
+# Basics
 
 ## Basics
-
-### Basics
-
 | **Field** | **Description / Value** |
 | --- | --- |
 | Server Name | Abbreviated Name of Domino server |
@@ -29,7 +47,7 @@ Remark: for naming standards see section |
 | Operating system | {System value, DO NOT CHANGE} |
 | Is this a Sametime server? | No |
 
-#### Directory Information
+### Directory Information
 
 | **Field** | **Description / Value** |
 | --- | --- |
@@ -40,7 +58,7 @@ Remark: for naming standards see section |
 | Allow this directory to be used as a remote primary directory for other servers | Disabled <br> Remark: 
 In order to prevent unnecessary network traffic, this option is to be disabled. |
 
-#### Automatic Server Recovery
+### Automatic Server Recovery
 
 | **Field** | **Description / Value** |
 | --- | --- |
@@ -53,7 +71,7 @@ Note: can be used e.g. on Sametime servers to collect diagnostic information. |
 | Maximum Fault Limits | 3 faults in 60 minutes |
 | Mail Fault Notification to | %FaultNotification |
 
-#### Server Location Information
+### Server Location Information
 
 | **Field** | **Description / Value** |
 | --- | --- |
@@ -72,16 +90,15 @@ Note: can be used e.g. on Sametime servers to collect diagnostic information. |
 
 | **Field** | **Description / Value** |
 | --- | --- |
-| Mail server | Abbreviated Domino Server Name of this server, 
-Same value as in field “Server Name” |
+| Mail server | Abbreviated Domino Server Name of this server, Same value as in field “Server Name” |
 | Passthru server | {blank} |
 | InterNotes server | {blank} |
 
-## Security
+# Security
 The Security tab of the Server document provides options to configure the server’s security parameters. It is divided into Administrators, Security settings, Server access, Programmability restrictions, Internet access, Passthru use.
 According to the naming standard for system groups (see chapter 5.7.4)
 
-### Administrators
+## Administrators
 
 | **Field** | **Description / Value** |
 | --- | --- |
@@ -94,20 +111,18 @@ According to the naming standard for system groups (see chapter 5.7.4)
 | Restricted System Administrator | {blank} |
 | Restricted System Commands | {blank} |
 
-### Programmability restrictions
+## Programmability restrictions
 
 | **Field** | **Description / Value** |
 | --- | --- |
 | Sign or Run unrestricted methods and operations |  |
 | Sign agents to run on behalf of someone else | %SignAgentsOnBehalf |
-| Sign agents or XPages to run on behalf of the invoker | {blank}
-Remark: for backwards compatibility |
+| Sign agents or XPages to run on behalf of the invoker | {blank} |
 | Sign or run restricted LotusScript/Java agents |  |
 | Run Simple and Formula agents |  |
-| Sign script libraries to run on behalf of someone else | {blank}
-Remark: must be blank for backwards compatibility |
+| Sign script libraries to run on behalf of someone else | {blank} |
 
-### Security settings
+## Security settings
 
 | **Field** | **Description / Value** |
 | --- | --- |
@@ -504,8 +519,7 @@ This section is obsolete – it was used for R5 servers running within the domai
 | Maximum number of URL path segments | 64 |
 | Maximum number of request headers | 48 |
 | Maximum size of request headers | 16 kbyte |
-| Maximum size of request content | 20480 kilobytes (specify 0 to allow unlimited content)
-=max. 20MByte file size for HTTP uploads. |
+| Maximum size of request content | 20480 kilobytes <br> specify 0 to allow unlimited content <br> max. 20MByte file size for HTTP uploads. |
 
 #### Trusted Proxies
 

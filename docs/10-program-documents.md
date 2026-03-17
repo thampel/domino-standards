@@ -1,4 +1,23 @@
-# Program documents
+---
+layout: default
+title: "Program documents"
+nav_order: 10
+parent: "Home"
+description: "HCL Domino Standards - Program documents"
+has_children: true
+---
+
+<h1>Server Document</h1>
+
+<details close markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+
 A Program document is used to automatically run a server task at a specific time
 
 ## Standard program documents

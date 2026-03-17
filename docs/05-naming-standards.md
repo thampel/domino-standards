@@ -259,7 +259,7 @@ Examples:
 This new standard will be used when creating new system groups. Former system groups LocalDomainServers, LocalDomainAdministrators and OtherDomainServers etc. will have to be supported in the new domain by adding the appropriate group above as members of the $ groups.
 
 ### Mail Only Groups
-Administrators are allowed to manually create special groups that can only be used for mail addressing. Within the global EPCOS Lotus Notes Domain, mail only groups are to be created by users using a different naming standard which is described in chapter **Fehler! Verweisquelle konnte nicht gefunden werden.**
+Administrators are allowed to manually create special groups that can only be used for mail addressing. Within the global Domain, mail only groups are to be created by users using a different naming standard which is described in chapter 
 
 |  | **Description** |
 | --- | --- |

@@ -1,13 +1,13 @@
 ---
 layout: default
-title: "Database Properties"
+title: "Web and Internet Sites "
 nav_order: 13
 parent: "Home"
-description: "HCL Domino Standards - Database Properties"
+description: "HCL Domino Standards - Web and Internet Sites"
 has_children: true
 ---
 
-<h1>Server Document</h1>
+<h1>Web and Internet Sites</h1>
 
 <details close markdown="block">
   <summary>

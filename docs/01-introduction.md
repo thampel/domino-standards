@@ -5,6 +5,7 @@ nav_order: 1
 parent: "Home"
 description: "HCL Domino Standards"
 has_children: true
+has_toc: false
 ---
 
 <h1>Introduction</h1>

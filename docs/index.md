@@ -4,6 +4,7 @@ title: "Home"
 nav_order: 1
 description: "HCL Domino Standards"
 has_children: true
+has_toc: false
 ---
 
 <h1>HCL Domino Standards</h1>
@@ -19,6 +20,8 @@ has_children: true
 
 This website is providing comprehensive information on how to configure a HCL Domino environment.
 
+
+
 ## References
 
-### Product License
+## Product License

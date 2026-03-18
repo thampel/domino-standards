@@ -17,3 +17,14 @@ has_children: true
 1. TOC
 {:toc}
 </details>
+
+Configuration details for system databases
+
+## Domino Directory Profile
+
+## Others
+
+- IdP Cat
+- Admin4
+- DDM
+- Events4

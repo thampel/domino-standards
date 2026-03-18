@@ -19,8 +19,9 @@ has_children: true
 </details>
 
 ## Fulltext index
-A full text index can be created for application databases when needed.
-For mail files, full text indexes should be created on the local replica, but never on a server.
+A full text index can be created for application databases as needed.
+However, for best usability, the FullText index should be enabled for mail files.
+
 When creating a Full Text Index the following settings should be used:
 
 | **Field** | **Description / Value** |
@@ -33,10 +34,9 @@ When creating a Full Text Index the following settings should be used:
 
 ## Design Properties
 
-| **Field** | **Description / Value** |
-| --- | --- |
-| Refresh design on admin server only | Enabled 
-if database inherits from any template |
+| **Field** | **Description / Value** | **Comments**
+| --- | --- | --- |
+| Refresh design on admin server only | Enabled | if  inherits from any master template |
 
 ## Advanced Database Properties
 

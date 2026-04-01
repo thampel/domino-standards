@@ -1,8 +1,8 @@
 ---
 layout: default
 title: "Database Properties"
-nav_order: 11
-parent: "Home"
+nav_order: 5
+parent: "Domino Server"
 description: "HCL Domino Standards - Database Properties"
 has_children: true
 ---

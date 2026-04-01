@@ -1,8 +1,8 @@
 ---
 layout: default
 title: "Domain Document"
-nav_order: 9
-parent: "Home"
+nav_order: 3
+parent: "Domino Server"
 description: "HCL Domino Standards - Domain Document"
 has_children: true
 ---

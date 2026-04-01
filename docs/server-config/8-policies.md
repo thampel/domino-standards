@@ -1,8 +1,8 @@
 ---
 layout: default
 title: "Policies"
-nav_order: 15
-parent: "Home"
+nav_order: 8
+parent: "Domino Server"
 description: "HCL Domino Standards - Policies"
 has_children: true
 ---

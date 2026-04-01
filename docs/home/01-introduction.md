@@ -25,20 +25,21 @@ The purpose of this document is to describe the recommended settings for an HCL 
 
 ## Revision History
 
-| Date of this revision: 2026-03-08 | Date of next revision    to be defined |
-| --- | --- |
-
 | **Revision Number** | **Revision Date** | **Summary of Changes** | **Changes marked** |
 | --- | --- | --- | --- |
 | 1.0 | 2026.03.08 | Released | (N) |
+
+* Date of next revision : to be defined 
+
 
 ## References
 
 This document is based on and refers to the following documents:
 
-| **Type** | **Title** |  | **Author** |
-| --- | --- | --- | --- |
-|  |  |  |  |
+| **Type** | **Title** | **Author** |
+| --- | --- | --- |
+|     |     |     |
+
 
 ### Symbols
 

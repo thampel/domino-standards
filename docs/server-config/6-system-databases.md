@@ -1,8 +1,8 @@
 ---
 layout: default
 title: "System Databases"
-nav_order: 12
-parent: "Home"
+nav_order: 6
+parent: "Domino Server"
 description: "HCL Domino Standards - System Databases"
 has_children: true
 ---

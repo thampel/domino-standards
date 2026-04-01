@@ -1,8 +1,8 @@
 ---
 layout: default
 title: "Program documents"
-nav_order: 10
-parent: "Home"
+nav_order: 4
+parent: "Domino Server"
 description: "HCL Domino Standards - Program documents"
 has_children: true
 ---

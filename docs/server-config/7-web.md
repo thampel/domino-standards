@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "Web and Internet Sites "
-nav_order: 13
-parent: "Home"
+title: "Web and Internet Sites"
+nav_order: 7
+parent: "Domino Server"
 description: "HCL Domino Standards - Web and Internet Sites"
 has_children: true
 ---

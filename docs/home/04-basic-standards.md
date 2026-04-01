@@ -64,4 +64,13 @@ This section describes the different server types used within the environment. D
 
 ## User Account Types
 
+
+
 ## Database Types
+
+Mail Files
+
+System Databases
+
+Applications
+

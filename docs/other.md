@@ -1,12 +1,12 @@
 ---
 layout: default
-title: "Comments and Other Topics"
+title: "Miscellaneous"
 nav_order: 98
-description: "Comments"
+description: "Miscellaneous"
 has_children: true
 ---
 
-<h1>Comments</h1>
+<h1>Miscellaneous</h1>
 
 <details close markdown="block">
   <summary>

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Notes Client Settings"
+title: "Notes Client"
 nav_order: 3
 description: "HCL Domino Standards - Notes Client"
 has_children: true

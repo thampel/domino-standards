@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Server Configuration Document"
-nav_order: 1
+nav_order: 2
 parent: "Domino Server"
 description: "HCL Domino Standards - Server Configuration Document"
 has_children: true

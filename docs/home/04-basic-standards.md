@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Basic Standards"
-nav_order: 3
+nav_order: 4
 parent: "Home"
 description: "HCL Domino - Basic Standards"
 has_children: true

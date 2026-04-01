@@ -21,7 +21,6 @@ has_toc: false
 This website is providing comprehensive information on how to configure a HCL Domino environment.
 
 
-
 ## References
 
 ## Product License
